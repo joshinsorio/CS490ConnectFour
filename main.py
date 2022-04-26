@@ -31,7 +31,10 @@ testsetup.test_choose_name_color()
 
 #################################################################################
 #Integration Test
-
+print("\n")
+print("----------------------------------------------------------")
+print("\t\t\t\t\t Integration Test \t\t\t\t\t\t")
+print("----------------------------------------------------------")
 testConnectFour = testConnectFour()
 testConnectFour.test_connect_four()
 testConnectFour.test_different_discs_are_dropped_in_separate_columns()
