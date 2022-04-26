@@ -47,7 +47,7 @@ class testConnectFour(unittest.TestCase):
     self.player1 = Player('Player 1', 'X')
     self.player2 = Player('Player 2', 'O')
     self.setup = Setup()
-    self.setup.run()
+    self.setup.run(False)
 
     players = self.setup.get_players()
 

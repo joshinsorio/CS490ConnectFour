@@ -19,7 +19,7 @@ class testSetup(unittest.TestCase):
   def test_choose_name_color(self):
     self.player1 = Player('Player 1', 'X')
 
-    player = self.setup.choose_name_colour(self.player1)
+    player = self.setup.choose_name_colour(self.player1, False)
     testresult1 = self.assertNotEqual(player.name, self.player1.name)
     testresult2 = self.assertNotEqual(player.colour, self.player1.colour)
 

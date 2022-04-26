@@ -55,6 +55,7 @@ if __name__ == '__main__':
 	# game loop
 	play_again = 'yes'
 	while play_again in Setup.ACCEPTABLE_ANSWERS:
+		player_setup.run(True)
 		height, width = Board.get_dimensions()
 		connect_four_game = Board(player_setup.get_players(), height, width)
 		connect_four_game.play()
